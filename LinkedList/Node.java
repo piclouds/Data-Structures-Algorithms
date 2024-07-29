@@ -1,4 +1,4 @@
-package LinkedList;
+package linkedlist;
 
 public class Node<T> {
     // Holds the data stored in this node
@@ -14,10 +14,6 @@ public class Node<T> {
 
     public T getData() {
         return this.data;
-    }
-
-    public void setData(T data) {
-        this.data = data;
     }
 
     public Node<T> getNext() {
