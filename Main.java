@@ -1,5 +1,6 @@
 import linkedlist.*;
 import stack.*;
+import queue.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -35,6 +36,28 @@ public class Main {
 
         System.out.println("Peeking from the stack");
         System.out.println("Peeked: " + stack.peek());
+
+        System.out.println("Creating a queue");
+        Queue<Integer> queue = new Queue<>();
+        System.out.println("Queue created");
+
+        System.out.println("Enqueuing 1, 2, and 3 to the queue, then print");
+        queue.enqueue(1);
+        queue.enqueue(2);
+        queue.enqueue(3);
+
+        queue.print();
+
+        System.out.println("Dequeuing from the queue, then print");
+        System.out.println("Dequeued: " + queue.dequeue());
+        queue.print();
+
+        System.out.println("Enqueuing 4 to the queue, then print");
+        queue.enqueue(4);
+        queue.print();
+
+        System.out.println("Peeking from the queue");
+        System.out.println("Peeked: " + queue.peek());
 
     }
 }
