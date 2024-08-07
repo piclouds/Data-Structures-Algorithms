@@ -1,6 +1,7 @@
 import linkedlist.*;
 import stack.*;
 import queue.*;
+import binarysearchtree.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -58,6 +59,21 @@ public class Main {
 
         System.out.println("Peeking from the queue");
         System.out.println("Peeked: " + queue.peek());
+
+        System.out.println("Creating a binary search tree");
+        BinarySearchTree bst = new BinarySearchTree();
+        System.out.println("Binary search tree created");
+
+        System.out.println("Inserting 5, 3, 7, 2, 4, 6, and 8 to the binary search tree, then print");
+        bst.insert(5);
+        bst.insert(3);
+        bst.insert(7);
+        bst.insert(2);
+        bst.insert(4);
+        bst.insert(6);
+        bst.insert(8);
+
+        bst.print();
 
     }
 }
